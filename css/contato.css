@@ -1,0 +1,105 @@
+#contato {
+  padding: 0rem 2rem;
+  padding-top: 3rem;
+  position: relative;
+  background: #030303;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contato-detalhe {
+  position: absolute;
+  top: -4rem;
+}
+
+.contato-descricao {
+  color: rgb(109, 109, 109);
+  font-size: 1.6rem;
+  place-self: center;
+}
+
+.contatos li {
+  color: white;
+  list-style: none;
+  font-size: 2rem;
+}
+
+@media (max-width: 915px) {
+  .contatos li {
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 915px) {
+  #contato {
+    grid-template-columns: 1fr;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+  }
+  .contatos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0rem 1.5rem;
+    justify-content: center;
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .contatos h3 {
+    margin: 0.7rem 0rem;
+  }
+  .contato-descricao {
+    text-align: center;
+  }
+  .contato-descricao::after {
+    display: block;
+    position: relative;
+    content: "";
+    width: auto;
+    height: 10px;
+    background: #6d6d6d;
+    top: -7.5rem;
+  }
+  .contato-detalhe {
+    display: none;
+  }
+}
+@media (max-width: 795px) {
+  #contato {
+    padding: 3.5rem 1rem 2rem 1rem;
+  }
+}
+@media (max-width: 632px) {
+  .contato-descricao::after {
+    top: -9.5rem;
+  }
+}
+@media (max-width: 514px) {
+  .contato-descricao::after {
+    top: -11.5rem;
+  }
+}
+@media (max-width: 409px) {
+  .contato-descricao::after {
+    top: -13.5rem;
+  }
+}
+@media (max-width: 400px) {
+  .contatos li {
+    font-size: 1.4rem;
+  }
+  .contato-descricao {
+    font-size: 1.3rem;
+  }
+  .contato-descricao::after {
+    top: -9rem;
+    height: 8px;
+  }
+}
+@media (max-width: 341px) {
+  .contato-descricao::after {
+    top: -10.5rem;
+  }
+  .contatos li {
+    font-size: 1.3rem;
+  }
+}

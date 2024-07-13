@@ -1,0 +1,200 @@
+#experiencia {
+  display: grid;
+  grid-template-columns: 20rem auto;
+  gap: 6rem;
+  padding: 0rem 3rem;
+  margin-bottom: 4rem;
+}
+
+.experiencia-titulo {
+  font-size: 7rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  color: #d6d6d6;
+  margin: 0rem;
+}
+.experiencia-descricao {
+  grid-column: 2;
+  font-size: 1.7rem;
+  color: rgb(80, 80, 80);
+  margin: 1rem 0px 4rem 0px;
+}
+
+.experiencia-descricao a {
+  display: inline;
+  color: rgb(80, 80, 80);
+  padding: 2rem 0rem;
+}
+
+.experiencia-descricao strong {
+  color: black;
+}
+
+.experiencia-caixa {
+  display: grid;
+  grid-column: 2;
+  grid-template-columns: 1fr 1fr;
+  padding: 1.5rem;
+  background-color: #f7f7f7;
+  border-radius: 7px;
+  gap: 0px 0.7rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.experiencia-caixa .projeto-descricao {
+  grid-row: 2;
+}
+
+.linguagens {
+  display: flex;
+  list-style: none;
+  padding: 0rem;
+  gap: 0.7rem;
+  justify-content: start;
+}
+
+.linguagens li {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  font-weight: bold;
+  place-self: start;
+  margin: 0px;
+}
+
+.numero {
+  margin-top: 1.5rem;
+  margin-right: 1.3rem;
+  position: absolute;
+  font-size: 1.2rem;
+  left: -53px;
+}
+.numero::after {
+  display: block;
+  content: "";
+  position: absolute;
+  right: -1.3rem;
+  top: -0.35rem;
+  width: 0.3rem;
+  height: 1.8rem;
+  background: linear-gradient(rgb(255, 72, 72), rgb(190, 0, 0));
+}
+.projeto-titulo {
+  margin: 0px;
+  font-size: 1.4rem;
+}
+
+.projeto-descricao {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1020px) {
+  #experiencia {
+    gap: 4rem;
+  }
+  .experiencia-descricao {
+    font-size: 1.5rem;
+  }
+
+  .numero {
+    font-size: 1.1rem;
+    left: -50px;
+  }
+  .linguagens li {
+    font-size: 0.9rem;
+  }
+  .linguagens {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  #experiencia {
+    gap: 1rem;
+  }
+}
+@media (max-width: 840px) {
+  #experiencia {
+    grid-template-columns: 1fr;
+  }
+  .experiencia-titulo {
+    font-size: 5rem;
+    text-align: center;
+  }
+  .experiencia-caixa {
+    gap: 0rem 2rem;
+  }
+  .numero::after {
+    top: -5px;
+    left: -8px;
+  }
+  .numero {
+    position: relative;
+    left: 10px;
+    order: 1;
+  }
+}
+@media (max-width: 795px) {
+  #experiencia {
+    padding: 0rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .experiencia-titulo {
+    font-size: 4rem;
+  }
+  .experiencia-descricao {
+    font-size: 1.3rem;
+  }
+  .projeto-titulo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .experiencia-titulo {
+    font-size: 3.5rem;
+  }
+  .experiencia-descricao {
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .experiencia-caixa {
+    grid-template-columns: 1fr;
+  }
+  .experiencia-titulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .experiencia-titulo {
+    font-size: 2.5rem;
+  }
+  .experiencia-descricao {
+    font-size: 1.2rem;
+  }
+  .projeto-titulo {
+    font-size: 1.1rem;
+  }
+  .projeto-descricao {
+    font-size: 1rem;
+  }
+  .numero {
+    font-size: 1rem;
+  }
+  .experiencia-caixa {
+    padding: 1.3rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .experiencia-titulo {
+    font-size: 2.3rem;
+  }
+}

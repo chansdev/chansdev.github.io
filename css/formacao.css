@@ -1,0 +1,210 @@
+#formacao {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  background-color: rgb(24, 24, 24);
+  padding: 4rem 3rem 3rem 3rem;
+}
+
+.formacao-titulo {
+  font-size: 7rem;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  color: #030303;
+  margin: 0rem;
+  width: 350px;
+}
+
+.formacao-descricao {
+  color: rgb(109, 109, 109);
+  font-size: 1.7rem;
+}
+
+.formacao-descricao strong,
+a {
+  color: white;
+}
+
+.formacoes ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style: none;
+  padding: 0rem;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.formacoes-caixa {
+  display: flex;
+  padding: 1.3rem;
+  background-color: #040404;
+  border-radius: 7px;
+  flex-direction: column;
+}
+
+.formacoes-titulo,
+.formacoes-local {
+  color: rgb(109, 109, 109);
+  margin: 0px;
+}
+
+.formacoes-titulo {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.formacoes-descricao {
+  color: rgb(247, 247, 247);
+  font-size: 1.3rem;
+  position: relative;
+  flex: 1;
+}
+
+.formacoes-descricao::after {
+  display: block;
+  content: "";
+  position: absolute;
+  left: -1.6rem;
+  top: -0.35rem;
+  width: 0.3rem;
+  height: 1.8rem;
+  background: linear-gradient(rgb(255, 72, 72), rgb(190, 0, 0));
+}
+
+.adicionais {
+  display: grid;
+  margin-top: 3.5rem;
+}
+
+.formacoes,
+.adicionais h3 {
+  margin: 0rem;
+  padding: 0rem;
+  color: rgb(109, 109, 109);
+  position: relative;
+}
+
+.adicionais p {
+  color: rgb(109, 109, 109);
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.adicionais strong {
+  color: rgb(247, 247, 247);
+}
+
+.adicionais h3 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.adicionais h3::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url("../img/idiomas.svg") no-repeat center center;
+  left: -36px;
+  top: -4px;
+}
+
+@media (max-width: 885px) {
+  .formacao-titulo {
+    font-size: 6rem;
+    width: 300px;
+  }
+  .formacao-descricao {
+    font-size: 1.5rem;
+  }
+
+  .formacoes-descricao {
+    font-size: 1.2rem;
+  }
+  .formacoes-titulo {
+    font-size: 0.9rem;
+  }
+  .formacoes-local {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 840px) {
+  #formacao {
+    grid-template-columns: 1fr;
+  }
+  .formacao-titulo {
+    width: auto;
+    font-size: 5rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 795px) {
+  #formacao {
+    padding: 4rem 1rem 3rem 1rem;
+  }
+  .adicionais h3::before {
+    display: inline-block;
+    position: relative;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: url("../img/idiomas.svg") no-repeat center center;
+    left: -5px;
+    top: 7px;
+  }
+}
+
+@media (max-width: 700px) {
+  .formacao-titulo {
+    font-size: 4rem;
+  }
+  .formacao-descricao {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 630px) {
+  .formacao-titulo {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .formacao-titulo {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .formacoes ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 400px) {
+  .formacao-titulo {
+    font-size: 2.5rem;
+  }
+  .formacao-descricao {
+    font-size: 1.2rem;
+  }
+  .formacoes-descricao {
+    font-size: 1rem;
+  }
+  .formacoes-titulo {
+    font-size: 0.7rem;
+  }
+  .formacoes-local {
+    font-size: 0.8rem;
+  }
+  .adicionais p {
+    font-size: 0.9rem;
+    margin-left: 1.5rem;
+  }
+  .adicionais h3 {
+    font-size: 1rem;
+  }
+}
